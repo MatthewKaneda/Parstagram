@@ -23,4 +23,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![](ezgif.com-gif-maker.gif)
+<img src='https://submissions.us-east-1.linodeobjects.com/ios_university/EI0koz5o.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
