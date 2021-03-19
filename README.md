@@ -22,7 +22,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![](ezgif.com-gif-maker1.gif)
+![](ezgif.com-gif-maker2.gif)
 
 # Parstagram - Part I
 
