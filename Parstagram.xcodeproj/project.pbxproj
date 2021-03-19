@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		341697D825FB2BBB00FF4824 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341697D725FB2BBB00FF4824 /* CameraViewController.swift */; };
 		341697DB25FB33F000FF4824 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341697DA25FB33F000FF4824 /* PostCell.swift */; };
+		3444787026043D4A00DF09DD /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3444786F26043D4A00DF09DD /* CommentCell.swift */; };
 		345F632825FB18B900E9BA27 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F632725FB18B900E9BA27 /* LoginViewController.swift */; };
 		345F632B25FB18C600E9BA27 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F632A25FB18C600E9BA27 /* FeedViewController.swift */; };
 		347B665E25FAED4100DB55D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347B665D25FAED4100DB55D3 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		341697D725FB2BBB00FF4824 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		341697DA25FB33F000FF4824 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		3444786F26043D4A00DF09DD /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		345F632725FB18B900E9BA27 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		345F632A25FB18C600E9BA27 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		347B665A25FAED4100DB55D3 /* Parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 				347B665D25FAED4100DB55D3 /* AppDelegate.swift */,
 				347B665F25FAED4100DB55D3 /* SceneDelegate.swift */,
 				347B666325FAED4100DB55D3 /* Main.storyboard */,
+				3444786F26043D4A00DF09DD /* CommentCell.swift */,
 				347B666625FAED4300DB55D3 /* Assets.xcassets */,
 				347B666825FAED4300DB55D3 /* LaunchScreen.storyboard */,
 				347B666B25FAED4300DB55D3 /* Info.plist */,
@@ -220,6 +223,7 @@
 				345F632B25FB18C600E9BA27 /* FeedViewController.swift in Sources */,
 				347B666025FAED4100DB55D3 /* SceneDelegate.swift in Sources */,
 				341697DB25FB33F000FF4824 /* PostCell.swift in Sources */,
+				3444787026043D4A00DF09DD /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

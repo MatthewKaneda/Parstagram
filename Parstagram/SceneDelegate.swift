@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,7 +17,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+//        NotificationCenter.default.addObserver(forName: Notification.Name("login"), object: nil, queue: OperationQueue.main) { (Notification) in
+//            print("Logout notification received")
+//            self.login()
+//        }
+//
+//        if PFUser.current() != nil {
+//            login()
+//        }
+        
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+            window?.rootViewController = feedNavigationController
+        }
+    }
+    
+    func login() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "FeedNavigationController")
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -10,18 +10,30 @@ import Parse
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+//    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let parseConfig = ParseClientConfiguration {
-            $0.applicationId = "cLZUcpDSagT9w7reLGnoCL52ApqJ2tLTJmfFWbKX"
-            $0.clientKey = "yCnLtPUpwe47vAI5J040zfM8BI02RmDpBsvagyZ7"
-            $0.server = "https://parseapi.back4app.com"
-        }
-        Parse.initialize(with: parseConfig)
+//        let parseConfig = ParseClientConfiguration {
+//            $0.applicationId = "cLZUcpDSagT9w7reLGnoCL52ApqJ2tLTJmfFWbKX"
+//            $0.clientKey = "yCnLtPUpwe47vAI5J040zfM8BI02RmDpBsvagyZ7"
+//            $0.server = "https://parseapi.back4app.com"
+//        }
+//        Parse.initialize(with: parseConfig)
+        
+        Parse.initialize(with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
+            configuration.applicationId = "cLZUcpDSagT9w7reLGnoCL52ApqJ2tLTJmfFWbKX"
+            configuration.server = "https://parseapi.back4app.com"
+            configuration.clientKey = "yCnLtPUpwe47vAI5J040zfM8BI02RmDpBsvagyZ7"
+        }))
+        
+//        if PFUser.current() != nil {
+//            let main = UIStoryboard(name: "Main", bundle: nil)
+//
+//            window?.rootViewController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+//        }
 
         return true
     }
